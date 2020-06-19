@@ -1,0 +1,19 @@
+{
+  "name": "mysnsreco",
+  "version": "0.0.1",
+  "description": "This is custom cordova plugin for conversion speech to text and text speech.",
+  "cordova": {
+    "id": "cordova-mysnsreco",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Sachin Sonvane",
+  "license": "SNS"
+}

@@ -1,0 +1,59 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"mysnsreco\"><param name=\"ios-package\" value=\"mysnsreco\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "NSMicrophoneUsageDescription": [
+            {
+              "xml": "<string>Request to use Microphone</string>",
+              "count": 1
+            }
+          ],
+          "NSSpeechRecognitionUsageDescription": [
+            {
+              "xml": "<string>Request to use Speech Recognition</string>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-mysnsreco": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-mysnsreco.mysnsreco",
+      "file": "plugins/cordova-mysnsreco/www/mysnsreco.js",
+      "pluginId": "cordova-mysnsreco",
+      "clobbers": [
+        "SNS"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-mysnsreco": "0.0.1"
+  }
+}
